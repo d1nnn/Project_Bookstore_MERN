@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/api/v1/:path*",
-      "destination": "https://bookstoreserver.vercel.app/api/v1/:path*"
+      "destination": "https://bookstoreserverapi.vercel.app/api/v1/:path*"
     }
   ]
 }

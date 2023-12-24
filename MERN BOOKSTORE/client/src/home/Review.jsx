@@ -4,8 +4,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { FaStar } from "react-icons/fa6";
 import { Avatar } from 'flowbite-react';
-import man from '../assets/man.png';
-import woman from '../assets/woman.png';
+import man from '/assets/man.png';
+import woman from '/assets/woman.png';
 
 // Import Swiper styles
 import 'swiper/css';

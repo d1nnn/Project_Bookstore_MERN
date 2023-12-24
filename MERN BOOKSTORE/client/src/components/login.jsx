@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../contacts/AuthProvider';
-// import googleLogo from '/assets/banner-img/googleLogo.png'
+import googleLogo from '/banner-img/googleLogo.png'
 
 const Login = () => {
 
@@ -88,7 +88,7 @@ const Login = () => {
 
                         <hr className='border-t-2 border-b-slate-950' />
                         <div>
-                            <button onClick={handleRegister} className='flex items-center text-xl mt-6'><img src={/*googleLogo*/""} alt='' className="w-6 h-6 mx-2" />Đăng nhập với Google</button>
+                            <button onClick={handleRegister} className='flex items-center text-xl mt-6'><img src={googleLogo} alt='' className="w-6 h-6 mx-2" />Đăng nhập với Google</button>
                         </div>
                     </div>
                 </div>

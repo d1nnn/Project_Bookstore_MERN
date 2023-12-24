@@ -13,43 +13,43 @@
   color: #fff;
 }
 
-.banner .swiper-slide:nth-child(1n) {    
-  background-image: url('../src/assets/banner-img/Book1.jpg');
+.banner .swiper-slide:nth-child(1n) {
+  background-image: url('/banner-img/Book1.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .banner .swiper-slide:nth-child(2n) {
-  background-image: url('../src/assets/banner-img/Book2.jpg');
+  background-image: url('/banner-img/Book2.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .banner .swiper-slide:nth-child(3n) {
-  background-image: url('../src/assets/banner-img/Book3.jpg');
+  background-image: url('/banner-img/Book3.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .banner .swiper-slide:nth-child(4n) {
-  background-image: url('../src/assets/banner-img/Book4.jpg');
+  background-image: url('/banner-img/Book4.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .banner .swiper-slide:nth-child(5n) {
-  background-image: url('../src/assets/banner-img/Book5.jpg');
+  background-image: url('/banner-img/Book5.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .banner .swiper-slide:nth-child(6n) {
-  background-image: url('../src/assets/banner-img/Book6.jpg');
+  background-image: url('/banner-img/Book6.jpg');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

@@ -1,12 +1,12 @@
 import React from "react";
-// import FAVBookImg from "/assets/banner-img/FavBook.jpg";
+import FAVBookImg from "/banner-img/FavBook.jpg";
 import { Link } from "react-router-dom";
 
 const FavBook = () => {
   return (
     <div className="px-4 lg:px-24 my-20 flex flex-col md:flex-row justify-between items-center gap-12">
       <div>
-        <img src={/*FAVBookImg*/""} alt="" className="rounded md:w-10/22" />
+        <img src={FAVBookImg} alt="" className="rounded md:w-10/22" />
       </div>
 
       <div className="md:w-1/2 space-y-6">

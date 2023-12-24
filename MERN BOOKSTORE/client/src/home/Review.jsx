@@ -4,8 +4,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import { FaStar } from "react-icons/fa6";
 import { Avatar } from 'flowbite-react';
-// import man from '/assets/man.png';
-// import woman from '/assets/woman.png';
+import man from '/man.png';
+import woman from '/woman.png';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -59,7 +59,7 @@ const Review = () => {
               {/* text */}
               <div className='mb-7'>
                 <p className='mb-5 mr-2 text-justify'>Doanh nghiệp trẻ đầy sáng tạo, tôi đánh giá rất cao tinh thần đội ngũ sáng lập, từ Sách Điện Tử Việt giúp nâng cao giá trị sách Việt.</p>
-                <Avatar img={/*man*/""} alt="avatar of Jese" rounded className='w-10 mb-4' />
+                <Avatar img={man} alt="avatar of Jese" rounded className='w-10 mb-4' />
                 <h5 className='text-lg font-medium'>Ông Phan Văn Mãi</h5>
                 <p className='text-base'>Chủ tịch UBND TP.Hồ Chí Minh</p>
               </div>
@@ -80,7 +80,7 @@ const Review = () => {
               {/* text */}
               <div className='mb-7'>
                 <p className='mb-5 mr-2 text-justify'>Thật tuyệt vời khi có thể đồng hành và trở thành đối tác tin cậy của Sách Điện Tử Việt. Chúc các bạn sẽ phát triển hơn trong tương lai.</p>
-                <Avatar img={/*man*/ ""} alt="avatar of Jese" rounded className='w-10 mb-4' />
+                <Avatar img={man} alt="avatar of Jese" rounded className='w-10 mb-4' />
                 <h5 className='text-lg font-medium'>Ông Phạm Minh Thuận</h5>
                 <p className='text-base'>CEO, Công ty Cổ phần phát hành sách FAHASA</p>
               </div>
@@ -101,7 +101,7 @@ const Review = () => {
               {/* text */}
               <div className='mb-7'>
                 <p className='mb-5 mr-2 text-justify'>Một mô hình kinh doanh rất hay và sáng tạo của các bạn trẻ. Trong tương lai tới, mô hình này được dự báo sẽ phát triển cực nhanh chóng.</p>
-                <Avatar img={/*man*/""} alt="avatar of Jese" rounded className='w-10 mb-4' />
+                <Avatar img={man} alt="avatar of Jese" rounded className='w-10 mb-4' />
                 <h5 className='text-lg font-medium'>Ông Nguyễn Hữu Hoạt</h5>
                 <p className='text-base'>CEO, Nhà sách Phương Nam</p>
               </div>
@@ -122,7 +122,7 @@ const Review = () => {
               {/* text */}
               <div className='mb-7'>
                 <p className='mb-5 mr-2 text-justify'>Nơi uy tín mà ban lãnh đạo nhà trường vẫn luôn khuyến khích các bạn sinh viên truy cập để tìm hiểu những thông tin chính thống tin cậy.</p>
-                <Avatar img={/*man*/""} alt="avatar of Jese" rounded className='w-10 mb-4' />
+                <Avatar img={man} alt="avatar of Jese" rounded className='w-10 mb-4' />
                 <h5 className='text-lg font-medium'>GS.TS.Sử Đình Thành</h5>
                 <p className='text-base'>Hiệu trưởng Đại học UEH</p>
               </div>
@@ -143,7 +143,7 @@ const Review = () => {
               {/* text */}
               <div className='mb-7'>
                 <p className='mb-5 mr-2 text-justify'>Đã từng có rất nhiều cơ hội làm việc chung với tập thể Sách Điện Tử Việt, các bạn rất chuyên nghiệp và nhiệt huyết. Website thực sự rất bổ ích!</p>
-                <Avatar img={/*man*/""} alt="avatar of Jese" rounded className='w-10 mb-4' />
+                <Avatar img={man} alt="avatar of Jese" rounded className='w-10 mb-4' />
                 <h5 className='text-lg font-medium'>Ông Trần Đăng Khoa</h5>
                 <p className='text-base'>Nhà văn - Nhà thơ</p>
               </div>
@@ -164,7 +164,7 @@ const Review = () => {
               {/* text */}
               <div className='mb-7'>
                 <p className='mb-5 mr-2 text-justify'>Thông qua Sách Điện Tử Việt, tôi đã có thể đưa rất nhiều tác phẩm của bản thân đến với quý độc giả, đặc biệt là các bạn trẻ. Đối tác quá tin cậy.</p>
-                <Avatar img={/*woman ?? */""} alt="avatar of Jese" rounded className='w-10 mb-4' />
+                <Avatar img={woman} alt="avatar of Jese" rounded className='w-10 mb-4' />
                 <h5 className='text-lg font-medium'>Bà Nguyễn Quỳnh Trang</h5>
                 <p className='text-base'>Nhà văn</p>
               </div>
@@ -185,7 +185,7 @@ const Review = () => {
               {/* text */}
               <div className='mb-7'>
                 <p className='mb-5 mr-2 text-justify'>Nơi chắp cánh cho ngòi bút của bản thân mình được bay cao và bay xa đến vậy. Đội ngũ kiểm duyệt nhanh chóng và chuyên nghiệp. Xin cảm ơn!</p>
-                <Avatar img={/*man*/ ""} alt="avatar of Jese" rounded className='w-10 mb-4' />
+                <Avatar img={man} alt="avatar of Jese" rounded className='w-10 mb-4' />
                 <h5 className='text-lg font-medium'>Ông Trần Hữu Hi</h5>
                 <p className='text-base'>Nhà văn trẻ</p>
               </div>

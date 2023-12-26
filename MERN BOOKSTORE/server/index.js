@@ -55,7 +55,7 @@ async function run() {
         username: data.username,
       });
       if (existingUser) {
-        return res.redirect("/api/v1/signup?error=email_exists");
+        return res.status(400).json({ success: false, message: "user exists" });
       }
 
       // Băm mật khẩu trước khi lưu vào database
@@ -79,7 +79,7 @@ async function run() {
     );
 
     //Đăng nhập
-    app.post("/api/v1/account/login", async (req, res) => {
+    app.post("/api/v1/account/signin", async (req, res) => {
       const { username, password } = req.body;
 
       const user = await userCollections.findOne({ username: username });

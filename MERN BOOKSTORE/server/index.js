@@ -49,34 +49,38 @@ async function run() {
 
     //Đăng ký tài khoản
     app.post("/api/v1/account/signup", async (req, res) => {
-      const data = req.body;
+      try {
+        const data = req.body;
 
-      const existingUser = await userCollections.findOne({
-        username: data.username,
-      });
-      if (existingUser) {
-        return res.status(400).json({ success: false, message: "user exists" });
+        const existingUser = await userCollections.findOne({
+          username: data.username,
+        });
+        if (existingUser) {
+          return res.status(400).json({ success: false, message: "user exists" });
+        }
+
+        // Băm mật khẩu trước khi lưu vào database
+        const hashedPassword = await bcrypt.hash(data.password, 10);
+        data.password = hashedPassword;
+
+        const result = await userCollections.insertOne(data);
+        // console.log(result);
+        //res.send(result);
+        res.json({ userNickname: data.userNickname });
+      } catch (e) {
+        res.status(400).json({ success: false, message: `data: ${data} is not valid` })
       }
-
-      // Băm mật khẩu trước khi lưu vào database
-      const hashedPassword = await bcrypt.hash(data.password, 10);
-      data.password = hashedPassword;
-
-      const result = await userCollections.insertOne(data);
-      // console.log(result);
-      //res.send(result);
-      res.json({ userNickname: data.userNickname });
     });
 
     //Passport
-    app.post(
-      "/api/v1/account/signup",
-      passport.authenticate("local", {
-        successRedirect: "/",
-        failureRedirect: "/signup",
-        failureFlash: true,
-      })
-    );
+    // app.post(
+    //   "/api/v1/account/signup",
+    //   passport.authenticate("local", {
+    //     successRedirect: "/",
+    //     failureRedirect: "/signup",
+    //     failureFlash: true,
+    //   })
+    // );
 
     //Đăng nhập
     app.post("/api/v1/account/signin", async (req, res) => {
@@ -84,9 +88,7 @@ async function run() {
 
       const user = await userCollections.findOne({ username: username });
       if (!user || !(await bcrypt.compare(password, user.password))) {
-        return res.render("login", {
-          error: "Tài khoản hoặc mật khẩu không đúng.",
-        });
+        return res.status(400).json({ success: false, message: "Tai khoan hoac mat khau khong dung" });
       }
       res.json({ userNickname: user.userNickname });
       //  res.redirect("/");
